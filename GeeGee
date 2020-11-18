@@ -1,0 +1,15 @@
+using System;
+
+namespace GeeGee
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int health = 100;
+            int attack = health;
+
+            Console.WriteLine("You died immediately with an attack with "+attack+" damage.\nGG ");
+        }
+    }
+}
