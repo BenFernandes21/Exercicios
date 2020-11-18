@@ -1,0 +1,25 @@
+using System;
+
+namespace VegitoComRandom
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int P1att = r.Next(1,1001);
+            int P2att = r.Next(1, 1001);
+            int P1def = r.Next(1, 1001);
+            int P2def = r.Next(1, 1001);
+            int P1intel = r.Next(1, 101);
+            int P2intel = r.Next(1, 101);
+
+            int att = (P1att + P2att) / 2;
+            int def = (P1def + P2def) / 2;
+            int inte = (P1intel + P2intel) / 2;
+
+            Console.WriteLine("The average of the combination of the two personages is:\nAttack: {0}\nDefenses: {1}\nIntellect: {2}", att, def, inte);
+        }
+    }
+}
