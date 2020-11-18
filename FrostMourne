@@ -1,0 +1,18 @@
+using System;
+
+namespace FrostMourne
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string n = "Shotgun";
+            string r = "Rare";
+            int d = 350;
+            string dp = "Fires teo bullets in which each deals " + d + " damage";
+            string tc = "Tanks";
+            string th = "Yes";
+            Console.WriteLine("Name: {0}\nRarity: {1}\nDamage: {2}\nDescription: {3}\nTarget Class: {4}\nIf is a two-hand weapon: {5}",n,r,d,dp,tc,th);
+        }
+    }
+}
