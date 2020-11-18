@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string n = "Sylvanas Windrunner";
+            int l = 245;
+            int r = 100;
+            string g = "Female";
+            string f = "Horde";
+            string c = "Mage";
+
+            Console.WriteLine("Nickname: {0} \nLevel: {1} \nRace: {2} \nGender: {3} \nFaction: {4} \nClass: {5}", n, l, r, g, f, c);
+        }
+    }
+}
