@@ -1,0 +1,17 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int att = (564 + 124) / 2;
+            int def = (827 + 672) / 2;
+            int inte = (54 + 65) / 2;
+
+            Console.WriteLine("The average of the combination of the two personages is:\nAttack: {0}\nDefenses: {1}\nIntellect: {2}",att,def,inte);
+
+        }
+    }
+}
