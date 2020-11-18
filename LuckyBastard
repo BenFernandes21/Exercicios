@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp2
+{
+    public class Program
+    {
+        static Random r = new Random();
+        static void Main(string[] args)
+        {
+            int health = 100;
+            int attack1 = r.Next(1, 100);
+            int attack2 = r.Next(1, attack1);
+            int attack3 = 99 - attack1 - attack2;
+            int health1 = health - attack1;
+            int health2 = health1 - attack2;
+            int health3 = health2 - attack3;
+
+            Console.WriteLine("With the first attack he got " +health1+ " health.");
+            Console.WriteLine("With the second attack he got " +health2+ " health.");
+            Console.WriteLine("With the third attack he got " +health3+ " health.\nLucky!!");
+
+        }
+    }
+}
