@@ -1,0 +1,15 @@
+using System;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int attack = r.Next(601);
+            double attackup = attack/0.50;
+            Console.WriteLine("Player power without powerup: {0}\nPlayer power with powerup: {1}", attack,attackup);
+        }
+    }
+}
