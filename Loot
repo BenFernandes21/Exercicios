@@ -1,0 +1,46 @@
+using System;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int randomitem1 = r.Next(101);
+            int randomitem2 = r.Next(101);
+
+            if(randomitem1 <= 60)
+            {
+                Console.WriteLine("First Item - Common");
+            }
+            else
+            {
+                if (randomitem1 <= 90)
+                {
+                    Console.WriteLine("First Item - Uncommon");
+                }
+                else
+                {
+                    Console.WriteLine("First Item - Rare");
+                }
+            }
+
+            if (randomitem2 <= 60)
+            {
+                Console.WriteLine("Second Item - Common");
+            }
+            else
+            {
+                if (randomitem2 <= 90)
+                {
+                    Console.WriteLine("Second Item - Uncommon");
+                }
+                else
+                {
+                    Console.WriteLine("Second Item - Rare");
+                }
+            }
+        }
+    }
+}
