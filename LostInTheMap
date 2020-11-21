@@ -1,0 +1,37 @@
+using System;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static Random r = new Random();
+        static void Main(string[] args)
+        {
+            int posx = r.Next(0, 501);
+            int posy = r.Next(0, 501);
+
+            if (posx > 250)
+            {
+                if(posy>250)
+                {
+                    Console.WriteLine("The character is on the Bottom-Right side of the map.");
+                }
+                else
+                {
+                    Console.WriteLine("The character is on the Top-Right side of the map.");
+                }
+            }
+            if (posx < 250)
+            {
+                if (posy > 250)
+                {
+                    Console.WriteLine("The character is on the Bottom-Left side of the map.");
+                }
+                else
+                {
+                    Console.WriteLine("The character is on the Top-Left side of the map.");
+                }
+            }
+        }
+    }
+}
