@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static Random r = new Random();
+        static void Main(string[] args)
+        {
+            int RollP1 = r.Next(1, 7);
+            int RollP2 = r.Next(1, 7);
+
+            if (RollP1 < RollP2)
+            {
+                Console.WriteLine("Player 2 rolled " + RollP2 + " and got the item!!" + "\nPlayer 1 rolled " + RollP1 + " and lost the item!!");
+            }
+            else if (RollP1 > RollP2)
+            {
+                Console.WriteLine("Player 1 rolled " + RollP1 + " and got the item!!\nPlayer 2 rolled " + RollP2 + " and lost the item!!");
+            }
+            else if (RollP1 == RollP2)
+            {   
+                Console.WriteLine("Roll is equal, please reroll again!");  
+            }
+        }
+    }
+}
