@@ -1,0 +1,26 @@
+using System;
+
+namespace Grinder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int gold = r.Next(1000,100001);
+            int drop = r.Next(35,66);
+
+            int criaturas = gold / drop; //nº de criaturas mortas
+
+            if (criaturas <= 1000)
+            {
+                Console.WriteLine("You killed "+criaturas+" creatures and got this "+gold+" gold!");
+            }
+            else
+            {
+                Console.WriteLine("Ginder!!!! \nYou killed more than 1 000 creatures ! \nYou got this "+gold+" gold");
+            }
+        }
+    }
+}
