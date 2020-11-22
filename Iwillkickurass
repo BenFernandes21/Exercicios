@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int hp1 = r.Next(100,201);
+            int hp2 = r.Next(100,201);
+            int attackpower1 = r.Next(10, 51);
+            int attackpower2 = r.Next(10,51);
+            int turnosP1 = hp1 / attackpower2; //numero de turnos que o player 1 sobrevive
+            int turnosP2 = hp2 / attackpower1; //numero de turnos que o player 2 sobrevive
+
+            if(turnosP1 > turnosP2)
+            {
+                Console.WriteLine("O Player 1 é o vencedor!");
+            }
+            else
+            {
+                Console.WriteLine("O Player 2 é o vencedor!");
+            }
+        }
+    }
+}
