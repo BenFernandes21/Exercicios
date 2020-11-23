@@ -1,0 +1,33 @@
+using System;
+
+namespace Betweenwalls
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int limit1 = r.Next(1,501-5);
+            int limit2 = r.Next(limit1+1, 501);
+
+            /*int limit1 = r.Next(1,501);
+            int limit2 = r.Next(1,501);
+            int tem
+            if(limit1>limt2)
+            {
+                tem = limit1;
+                limit1 = limit2;
+                limit2 = tem;
+            }
+            */
+
+            Console.WriteLine("Printing values for: " + limit1 + " until " + limit2);
+
+            for(int i = limit1; i <= limit2; i++)
+            {
+                Console.WriteLine("Value: " + i);
+            }
+        }
+    }
+}
