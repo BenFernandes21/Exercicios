@@ -1,0 +1,31 @@
+using System;
+
+namespace FightOrFlight
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int pX1 = r.Next(501);
+            int pY1 = r.Next(501);
+            int pX2 = r.Next(501);
+            int pY2 = r.Next(501);
+
+            int dX = pX2 - pX1;
+            int dY = pY2 - pY1;
+
+            double hip = Math.Sqrt(dX*dX + dY*dY);
+
+            if(hip < 20)
+            {
+                Console.WriteLine("Player 2 is "+(int)hip+" pixels from the Player 1 and so he flies off the map!");
+            }
+            else
+            {
+                Console.WriteLine("Player 2 is "+(int)hip+" pixels from the Player 1 and so he started fighting!");
+            }
+        }
+    }
+}
