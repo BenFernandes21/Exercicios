@@ -1,0 +1,33 @@
+using System;
+
+namespace LetsMove
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int startX = 0;
+            int startY = 0;
+
+            int targetX = r.Next(1, 1001);
+            int targetY = r.Next(1, 1001);
+
+            int counterX = startX;
+            int counterY = startY;
+
+            for (counterX = startX; counterX <= targetX; counterX++)
+            {
+                Console.WriteLine("The x position of the current character is: " + counterX);
+            }
+
+            for (counterY = startY; counterY <= targetY; counterY++)
+            {
+                Console.WriteLine("The y position of the current character is: " + counterY);
+            }
+
+            Console.WriteLine("The current character's final position is: " + targetX + "x, " + targetY + "y");
+        }
+    }
+}
